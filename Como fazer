@@ -1,0 +1,37 @@
+clear
+apt-get update
+apt-get upgrade
+apt-key adv --keyserver hkp://keys.gnupg.net --recv-key 3cb9fd148f374fef
+add-apt-repository "deb http://linuxcnc.org/ precise base 2.7-rtai"
+apt-get update
+apt-get install linuxcnc
+apt-get install linux-image-3.4-9-rtai-686-pae rtai-modules-3.4-9-rtai-686-pae
+apt-get install linux-headers-3.4-9-rtai-686-pae
+uname -r
+reboot
+uname -r
+apt-get update
+apt-key adv --keyserver hkp://keys.gnupg.net --recv-key 3cb9fd148f374fef
+apt-key adv --keyserver hkp://keys.gnupg.net --recv-key 8f374fef
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key 3cb9fd148f374fef
+add-apt-repository "deb http://linuxcnc.org/ precise base 2.7-rtai"
+apt-get update
+apt-get install linux-image-3.4-9-rtai-686-pae rtai-modules-3.4-9-rtai-686-pae
+apt-get install linux-headers-3.4-9-rtai-686-pae
+uname -r
+reboot
+apt-get install linuxcnc
+lsb_release -a
+   
+   ##ALTERAR GRUB
+   
+grub --version
+apt-get install grub2
+grub --version
+grub2 --version
+apt-get install grub
+apt-get install grub2
+vi grub 
+update-grub
+reboot
+  
